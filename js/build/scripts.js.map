@@ -1,0 +1,1 @@
+{"version":3,"sources":["../source/scripts.js"],"names":[],"mappings":"AAAA,EAAE,QAAQ,EAAE,CAAC,CAAC;AACd,IAAI;AACJ;AACA;AACA;AACA;AACA,IAAI;AACJ,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC","file":"scripts.js","sourcesContent":["$(function() {\n    \n\n\n\n\n    \n}); // end of doc ready"]}

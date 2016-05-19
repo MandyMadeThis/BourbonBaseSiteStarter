@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "repository": {
     "type": "git",
-    "url": "git@github.com:MandyMadeThis/BaseSiteStarter.git"
+    "url": "git@github.com:MandyMadeThis/BourbonBaseSiteStarter.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
