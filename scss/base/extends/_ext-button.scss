@@ -1,0 +1,72 @@
+// @extend %button for left-to-right hover effect
+%button {
+    -webkit-font-smoothing: antialiased;
+    background: transparent;
+    border-radius: 0;
+    border: 3px solid $blue;
+    color: $blue;
+    display: inline-block;
+    font-family: $font-arial;
+    font-size: 14px;
+    line-height: 1;
+    outline: none;
+    padding: 8px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.25s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 2%;
+    &:after {
+        @include transition(all 0.3s ease-in-out);
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $blue;
+    }
+    &:hover {
+      color: $black;
+    }
+    &:hover:after,
+    &:focus:after {
+        width: 100%;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+// @extend %button-down for top-to-bottom hover effect
+%button-down {
+    @extend %button;
+    &:after {
+        @include transition(all 0.3s ease-in-out);
+        width: 100%;
+        height: 0%;
+    }
+    &:hover:after,
+    &:focus:after {
+        height: 100%;
+    }
+}
+
+// @extend %button-large for large black button
+%button-large {
+    @extend %button;
+    border: 3px solid $black;
+    color: $black;
+    padding: 50px 125px;
+    &:after {
+        background: $black;
+    }
+    &:hover {
+      color: $white;
+    }
+}

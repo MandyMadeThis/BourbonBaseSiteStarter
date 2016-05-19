@@ -1,0 +1,53 @@
+//Mobile Styles FIRST!
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+.header {
+  h1 {
+    text-align: center;
+  }
+}
+
+.wrapper {
+
+}
+
+.container {
+ @include outer-container;
+}
+
+.section-title {
+  border-bottom: solid 1px #dedede;
+  padding-bottom: 0.25em;
+  margin: 1em 0 0.5em;
+  h3{
+    margin: .75em 0;
+  }
+}
+.colours {
+    .swatch {
+      border: 1px solid #000;
+      text-align: center;
+      margin-bottom: $gutter;
+      //MEDIA QUERIES
+      @include media($tablet) {
+        @include span-columns(4);
+        @include omega(2n); 
+       }
+
+      @include media($desktop) {
+        @include span-columns(3);
+        @include omega(4n); 
+        padding: 2em -0px;
+       }
+
+      @include media($large) { }
+
+      @include media($xlarge) { }
+    }
+    .swatch:nth-child(1), .swatch:nth-child(2)  {
+      color: $white;
+    }
+}

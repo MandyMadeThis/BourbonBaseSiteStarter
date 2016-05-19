@@ -1,0 +1,17 @@
+// import all our dependancies
+@import "bourbon/bourbon";
+@import "base/grid-settings";
+@import "neat/neat";
+
+//set the max-width of our grid at our breakpoints - (defined in base/_grid-settings.scss)
+@include media($tablet) { $max-width: 80%; }
+@include media($desktop) { $max-width: 70%; }
+@include media($large) { $max-width: 60%; }
+@include media($xlarge) { $max-width: 60%; }
+
+// import all our global base styles
+@import "base/base";
+
+//import all our modular styles 
+
+@import "-native/style-guide" 

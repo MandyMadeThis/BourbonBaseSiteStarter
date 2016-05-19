@@ -1,0 +1,33 @@
+@import "../neat/neat-helpers"; 
+
+// Uncomment to turn visual grid ON or set: $visual-grid: true;
+$visual-grid: true;
+$visual-grid-color: #696585;
+$visual-grid-index: back;
+$visual-grid-opacity: 0.3;
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+$grid-columns: 4;
+$max-width: 90%;
+
+// Breakpoints
+$first-breakpoint-value: 641px;
+$second-breakpoint-value: 1024px;
+$third-breakpoint-value: 1440px;
+$fourth-breakpoint-value: 1920px;
+
+$tablet: new-breakpoint(min-width em($first-breakpoint-value) max-width em($second-breakpoint-value) 8 );
+$desktop: new-breakpoint(min-width em($second-breakpoint-value + 1) max-width em($third-breakpoint-value) 12 );
+$large: new-breakpoint(min-width em($third-breakpoint-value + 1) max-width em($fourth-breakpoint-value) 12 );
+$xlarge: new-breakpoint(min-width em($fourth-breakpoint-value +1) 12 ); 
+
+
+
+
+
+
+
+
+
